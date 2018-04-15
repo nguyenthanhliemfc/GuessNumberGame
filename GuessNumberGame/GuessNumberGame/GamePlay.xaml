@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessNumberGame.GamePlay">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image x:Name="ImgBrain" Source="brain.png" HeightRequest="80" WidthRequest="80"/>
+                <Label Text="I have my number. You guess it!" FontSize="23" TextColor="Blue" HorizontalOptions="CenterAndExpand"/>
+                <Label Text=""/>
+                <Label x:Name="LabelPlayerNum" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                <Label x:Name="LabelStatus" Text="" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label x:Name="LabelYourNum" Text="Your number show here!" FontSize="18" TextColor="Gray" VerticalOptions="CenterAndExpand"/>
+                    <Image x:Name="ImgClear" Source="clear.png" HorizontalOptions="End" WidthRequest="80" HeightRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="ButtonClear" NumberOfTapsRequired="1" Tapped="ButtonClear_OnTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+                <Image x:Name="ImgBay" Source="seven.png"
+                       Grid.Row="1" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonBay" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgTam" Source="eight.png"
+                       Grid.Row="1" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonTam" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgChin" Source="nine.png"
+                       Grid.Row="1" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonChin" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgBon" Source="four.png"
+                       Grid.Row="2" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonBon" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgNam" Source="five.png"
+                       Grid.Row="2" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonNam" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgSau" Source="six.png"
+                       Grid.Row="2" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonSau" NumberOfTapsRequired="1"  Tapped="ButtonBay_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgMot" Source="one.png"
+                       Grid.Row="3" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonMot" NumberOfTapsRequired="1"  Tapped="ButtonBay_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgHai" Source="two.png"
+                       Grid.Row="3" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonHai" NumberOfTapsRequired="1"  Tapped="ButtonBay_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgBa" Source="three.png"
+                       Grid.Row="3" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonBa" NumberOfTapsRequired="1"  Tapped="ButtonBay_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgKhong" Source="zero.png"
+                       Grid.Row="4" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonKhong" NumberOfTapsRequired="1" Tapped="ButtonBay_OnTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="ImgOK" Source="ok.png"
+                       Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ButtonOK" NumberOfTapsRequired="1" Tapped="ButtonOK_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

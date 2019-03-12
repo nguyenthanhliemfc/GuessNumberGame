@@ -10,5 +10,8 @@ https://docs.microsoft.com/vi-vn/xamarin/xamarin-forms/user-interface/animation/
 https://docs.microsoft.com/vi-vn/xamarin/xamarin-forms/app-fundamentals/gestures/tap
 
 Thank you for watching my Video!
+
+https://www.youtube.com/watch?v=eWrL5VQnVr8
+
 Please Subscribe, Like and Share my video to help everybody!
 THANK YOU!
